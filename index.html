@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="shape shape1">
+            <div class="product1"><img src="./products/good girl.jpg" alt="" height="100px" width="100%">
+
+            </div>
+            <div class="product">
+                <div class="infos">
+                    <div class="wrapper">
+                        <button onclick="decrement(event)">-</button>
+                        <span class="qt">1</span>
+                        <button onclick="increment(event)">+</button>
+                        <span class="price">150</span>
+                    </div>
+                    <span onclick="changecolor(event)"  class="material-symbols-outlined">
+                        favorite
+                    </span>
+                    <button  onclick="deleteMe(event)" >delete me</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="shape shape2">
+            <div class="product2"><img src="./products/pexels-valeria-boltneva-1961789.jpg" alt="" height="100px"
+                    width="100%">
+            </div>
+
+
+            <div class="product">
+                <div class="infos">
+                    <div class="wrapper">
+                        <button onclick="decrement(event)">-</button>
+                        <span class="qt">1</span>
+                        <button onclick="increment(event)">+</button>
+                        <span class="price">75</span>
+                    </div>
+                    <span onclick="changecolor(event)" class="material-symbols-outlined">
+                        favorite
+                    </span>
+                    <button onclick="deleteMe(event)">delete me</button>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div id="total">votre total est </div>
+    <script src="./main.js"></script>
+</body>
+
+</html>
